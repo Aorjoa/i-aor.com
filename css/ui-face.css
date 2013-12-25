@@ -2,21 +2,119 @@
 	website : aorjoa.blogspot.com , www.i-aor.com
 	Free license for non-comercial or conmercial use.
 */
-
-#layout-main {
-	margin: 50px 100px 50px 100px;
+body{
+	background-color: gray;
 }
-.right-logo{
-	float: right;
-}
-
-#logo{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-div h1 {
+.ballLogo h1 {
 	font-family: 'League Script', cursive;
 	margin-top: -8px;
+}
+.fade-in{
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.fade-in-fast{
+	-webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+.layout-main {
+	position: fixed;
+	width: 800px;
+	height: 420px;
+	border-radius: 10px;
+	margin-left: 8%;
+	cursor:pointer;cursor:hand;
+}
+.ball{
+	border-radius: 100%;
+	border-width: 8px;
+	border-style: solid;
+	border-color: white;
+	margin-left: 80px;
+	margin-top: 100px;
+	float: left;
+	width: 180px;
+	height: 180px;
+	text-align: center;
+	cursor:pointer;cursor:hand;
+	display:none;
+}
+.aboutme{
+	position:fixed;
+	top:10px;
+	left:5%;
+	background: red;
+}
+.aboutme:hover{
+	border-color: #000100;
+}
+.showcase{
+	position:fixed;
+	top:10px;
+	left:22%;
+	background: #add8e6;
+}
+.showcase:hover{
+	border-color: #000100;
+}
+.blog{
+	position:fixed;
+	top:10px;
+	left:39%;
+	background: #bf7fbf;
+}
+.blog:hover{
+	border-color: #000100;
+}
+.ball h1{
+	font-family: 'League Script', cursive;
+	margin-top: 40%;
+}
+.logo{
+	border-radius: 100%;
+	border-width: 8px;
+	border-style: solid;
+	border-color: white;
+	margin-top: 10px;
+	margin-left: 80px;
+	width: 420px;
+	height: 420px;
+	background: #ffe900;
+	-webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.pic{
+	border-radius: 8px;
+	border-width: 8px;
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 140px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	margin-left: 480px;
+	margin-top: -228px;
+}
+.layout-main:hover .blog,.layout-main:hover .aboutme,.layout-main:hover .showcase{
+	display: block;
+	}
+.layout-main:hover .logo{
+	-webkit-transform: translate(40em,0);
+    -moz-transform: translate(40em,0);
+    -o-transform: translate(40em,0);
+    -ms-transform: translate(40em,0);
+    transform: translate(40em,0);
+}
+.layout-main:hover{
+	background: #c9e52a;
+}
+.logo div {
+	padding-top: 35%;
+	text-align: center;
 }
