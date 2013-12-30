@@ -2,38 +2,30 @@
 	website : aorjoa.blogspot.com , www.i-aor.com
 	Free license for non-comercial or conmercial use.
 */
-body{
-	background-color: gray;
-}
+
 .ballLogo h1 {
 	font-family: 'League Script', cursive;
 	margin-top: -8px;
 }
+
 .fade-in{
-	-webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
-.fade-in-fast{
-	-webkit-transition: 0.1s ease-in-out;
-    -moz-transition: 0.1s ease-in-out;
-    -o-transition: 0.1s ease-in-out;
-    transition: 0.1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .layout-main {
-	position: fixed;
 	width: 800px;
 	height: 420px;
 	border-radius: 10px;
-	margin-left: 8%;
+	margin-left: 80px;
 	cursor:pointer;cursor:hand;
 }
 .ball{
 	border-radius: 100%;
 	border-width: 8px;
 	border-style: solid;
-	border-color: white;
+	border-color: transparent;
 	margin-left: 80px;
 	margin-top: 100px;
 	float: left;
@@ -41,34 +33,44 @@ body{
 	height: 180px;
 	text-align: center;
 	cursor:pointer;cursor:hand;
-	display:none;
+	position: absolute;
+	display: inline-block;
+}
+.ball h1 {
+	color: transparent;
+}
+.layout-main:hover .ball h1 {
+	color: black;
 }
 .aboutme{
-	position:fixed;
 	top:10px;
-	left:5%;
+	left:50px;
+}
+.layout-main:hover  .aboutme{
 	background: red;
 }
 .aboutme:hover{
-	border-color: #000100;
+	border-color: white;
 }
 .showcase{
-	position:fixed;
 	top:10px;
-	left:22%;
+	left:280px;
+}
+.layout-main:hover .showcase{
 	background: #add8e6;
 }
 .showcase:hover{
-	border-color: #000100;
+	border-color: white;
 }
 .blog{
-	position:fixed;
 	top:10px;
-	left:39%;
+	left:510px;
+}
+.layout-main:hover .blog{
 	background: #bf7fbf;
 }
 .blog:hover{
-	border-color: #000100;
+	border-color: white;
 }
 .ball h1{
 	font-family: 'League Script', cursive;
@@ -84,10 +86,6 @@ body{
 	width: 420px;
 	height: 420px;
 	background: #ffe900;
-	-webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
 }
 .pic{
 	border-radius: 8px;
@@ -101,9 +99,6 @@ body{
 	margin-left: 480px;
 	margin-top: -228px;
 }
-.layout-main:hover .blog,.layout-main:hover .aboutme,.layout-main:hover .showcase{
-	display: block;
-	}
 .layout-main:hover .logo{
 	-webkit-transform: translate(40em,0);
     -moz-transform: translate(40em,0);
@@ -117,4 +112,23 @@ body{
 .logo div {
 	padding-top: 35%;
 	text-align: center;
+}
+.dataFrame{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding:50px 50px 50px 50px;
+	border-radius: 8px;
+	border-width: 8px;
+	box-shadow: 0 0 8px rgba(255, 20, 147, .8);
+	-webkit-box-shadow: 0 0 8px rgba(255, 20, 147, .8);
+	-moz-box-shadow: 0 0 8px rgba(255, 20, 147, .8);
+	display: none;
+}
+span{
+	font-family:"Arial","Helvetica",sans-serif;
+}
+body{
+	overflow-x: hidden;
 }
